@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import App from "./EyeDoc";
 import reportWebVitals from "./reportWebVitals";
 import { Canvas } from "@react-three/fiber";
+import EyeDoc from "./EyeDoc";
+import Main from "./Main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Canvas
-      style={{ height: "100vh", background: "black" }}
-      camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 7] }}
-    >
-      <App />
-    </Canvas>
+    <Main />
   </React.StrictMode>
 );
 

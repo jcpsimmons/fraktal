@@ -14,7 +14,7 @@ import {
   Vignette,
 } from "@react-three/postprocessing";
 
-function App() {
+function EyeDoc() {
   const BOXES = 10;
   let refs = useRef([]);
   refs.current = new Array(Math.pow(BOXES, 3))
@@ -83,4 +83,4 @@ function App() {
   );
 }
 
-export default App;
+export default EyeDoc;
